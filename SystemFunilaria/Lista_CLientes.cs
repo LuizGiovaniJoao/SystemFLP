@@ -24,27 +24,37 @@ namespace SystemFunilaria
             frm.Show();
         }
 
-        public void txt_CpfCnpj_Enter(object sender, EventArgs e)
+        private void bt_Remover_Click(object sender, EventArgs e)
+        {
+            FuncoesCor.apresentaDeletar();
+        }
+
+        private void txt_Nome_Enter(object sender, EventArgs e)
+        {
+            FuncoesCor.changeTextBoxFocusIn(sender);
+            if (txt_Nome.Text == "Nome do cliente")
+                txt_Nome.Text = "";
+        }
+
+        private void txt_Nome_Leave(object sender, EventArgs e)
+        {
+            FuncoesCor.changeTextBoxFocusOut(sender);
+            if (txt_Nome.Text == "")
+                txt_Nome.Text = "Nome do cliente";
+        }
+
+        private void txt_CpfCnpj_Enter(object sender, EventArgs e)
         {
             FuncoesCor.changeTextBoxFocusIn(sender);
             if (txt_CpfCnpj.Text == "CPF/CNPJ")
-            {
                 txt_CpfCnpj.Text = "";
-            }
         }
 
         private void txt_CpfCnpj_Leave(object sender, EventArgs e)
         {
             FuncoesCor.changeTextBoxFocusOut(sender);
-            if(txt_CpfCnpj.Text == "")
-            {
+            if (txt_CpfCnpj.Text == "")
                 txt_CpfCnpj.Text = "CPF/CNPJ";
-            }
-        }
-
-        private void bt_Remover_Click(object sender, EventArgs e)
-        {
-            FuncoesCor.apresentaDeletar();
         }
     }
 }

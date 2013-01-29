@@ -83,7 +83,7 @@
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(307, 61);
-            this.groupBox2.TabIndex = 9;
+            this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "CPF/CNPJ";
             // 
@@ -107,7 +107,7 @@
             this.groupBox1.Location = new System.Drawing.Point(325, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(654, 61);
-            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "NOME";
             // 
@@ -120,8 +120,8 @@
             this.txt_Nome.Size = new System.Drawing.Size(615, 26);
             this.txt_Nome.TabIndex = 4;
             this.txt_Nome.Text = "Nome do cliente";
-            this.txt_Nome.Enter += new System.EventHandler(this.txt_CpfCnpj_Enter);
-            this.txt_Nome.Leave += new System.EventHandler(this.txt_CpfCnpj_Leave);
+            this.txt_Nome.Enter += new System.EventHandler(this.txt_Nome_Enter);
+            this.txt_Nome.Leave += new System.EventHandler(this.txt_Nome_Leave);
             // 
             // Lista_CLientes
             // 
