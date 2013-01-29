@@ -31,7 +31,8 @@ namespace SystemFunilaria
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("");
+            Lista_Funcionarios frm = new Lista_Funcionarios();
+            frm.Show();
         }
     }
 }

@@ -95,8 +95,8 @@
             this.txt_NomeApelido.Size = new System.Drawing.Size(600, 26);
             this.txt_NomeApelido.TabIndex = 4;
             this.txt_NomeApelido.Text = "Nome/Apelido";
-            this.txt_NomeApelido.Enter += new System.EventHandler(this.txt_CpfCodigo_Enter);
-            this.txt_NomeApelido.Leave += new System.EventHandler(this.txt_CpfCodigo_Leave);
+            this.txt_NomeApelido.Enter += new System.EventHandler(this.txt_NomeApelido_Enter);
+            this.txt_NomeApelido.Leave += new System.EventHandler(this.txt_NomeApelido_Leave);
             // 
             // groupBox2
             // 
