@@ -76,6 +76,7 @@
             this.bt_Remover.TabIndex = 15;
             this.bt_Remover.Text = "Remover";
             this.bt_Remover.UseVisualStyleBackColor = true;
+            this.bt_Remover.Click += new System.EventHandler(this.bt_Remover_Click);
             // 
             // groupBox_filtroVeiculo
             // 

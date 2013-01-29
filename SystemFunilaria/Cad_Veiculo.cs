@@ -43,10 +43,5 @@ namespace SystemFunilaria
         {
             FuncoesCor.apresentaSalvo();
         }
-
-        private void Cad_Veiculo_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

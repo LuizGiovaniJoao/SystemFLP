@@ -32,5 +32,10 @@ namespace SystemFunilaria
         {
             FuncoesCor.changeTextBoxFocusOut(sender);
         }
+
+        private void bt_Remover_Click(object sender, EventArgs e)
+        {
+            FuncoesCor.apresentaDeletar();
+        }
     }
 }

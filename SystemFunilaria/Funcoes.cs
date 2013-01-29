@@ -44,10 +44,17 @@ namespace SystemFunilaria
             m.BackColor = Color.White;
         }
 
-        //Método apresentação do formInformacao com a mensagem salvar
+        //Método de apresentação do formInformacao com a mensagem salvar
         public void apresentaSalvo()
         {
-            FormInformacao abrir = new FormInformacao();
+            FormInformacao abrir = new FormInformacao("Salvo!");
+            abrir.Show();
+        }
+
+        //Método de apresentação do formInformacao com a mensagem salvar
+        public void apresentaDeletar()
+        {
+            FormInformacao abrir = new FormInformacao("Removido!");
             abrir.Show();
         }
     }

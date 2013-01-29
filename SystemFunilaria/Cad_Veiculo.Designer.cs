@@ -298,7 +298,6 @@
             this.Controls.Add(this.txt_OBS);
             this.Name = "Cad_Veiculo";
             this.Text = "Cad_Veiculo";
-            this.Load += new System.EventHandler(this.Cad_Veiculo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -13,14 +13,28 @@ namespace SystemFunilaria
     public partial class FormInformacao : Form
     {
         public NumericUpDown num = new NumericUpDown();
-
-        public FormInformacao()
+        public string inform;
+        public FormInformacao(string informacao)
         {
             InitializeComponent();
+            inform = informacao;
         }
 
         private void FormInformacao_Load(object sender, EventArgs e)
         {
+            //
+            //
+            label1.Text = inform;
+            if(label1.Text == "Salvo!")
+            {
+                pictureBox1.Image = SystemFunilaria.Properties.Resources.correto;
+                label1.Size = new Size(73, 22);
+            }
+            else if(label1.Text == "Removido!")
+            {
+                pictureBox1.Image = SystemFunilaria.Properties.Resources._104;
+                label1.Size = new Size(121, 22);
+            }
             apresentar();
         }
 

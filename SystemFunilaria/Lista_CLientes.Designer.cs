@@ -67,6 +67,7 @@
             this.bt_Remover.TabIndex = 11;
             this.bt_Remover.Text = "Remover";
             this.bt_Remover.UseVisualStyleBackColor = true;
+            this.bt_Remover.Click += new System.EventHandler(this.bt_Remover_Click);
             // 
             // listView_Clientes
             // 
@@ -97,7 +98,6 @@
             this.txt_CpfCnpj.TabIndex = 0;
             this.txt_CpfCnpj.Text = "CPF/CNPJ";
             this.txt_CpfCnpj.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_CpfCnpj.TextChanged += new System.EventHandler(this.txt_CpfCnpj_TextChanged);
             this.txt_CpfCnpj.Enter += new System.EventHandler(this.txt_CpfCnpj_Enter);
             this.txt_CpfCnpj.Leave += new System.EventHandler(this.txt_CpfCnpj_Leave);
             // 

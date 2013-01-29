@@ -12,6 +12,8 @@ namespace SystemFunilaria
 {
     public partial class Lista_Veiculos : Form
     {
+        Funcoes FuncoesCs = new Funcoes();
+
         public Lista_Veiculos()
         {
             InitializeComponent();
@@ -26,6 +28,11 @@ namespace SystemFunilaria
         {
             Cad_Veiculo frm = new Cad_Veiculo();
             frm.Show();
+        }
+
+        private void bt_Remover_Click(object sender, EventArgs e)
+        {
+            FuncoesCs.apresentaDeletar();
         }
     }
 }
